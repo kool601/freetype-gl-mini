@@ -21,10 +21,7 @@ dependencies:
   - glfw-pal 
   - containers 
   - mtl 
-  - random 
   - lens-extra 
-  - halive 
-  - linear-extra
 
 library:
   source-dirs:
@@ -46,34 +43,3 @@ library:
       include-dirs: C:\msys64\mingw64\include
     else:
       extra-libraries: freetype
-  
-
-tests:
-  basic:
-    ghc-options: -threaded -rtsopts
-    source-dirs: 
-      - test
-    main: TestBasic.hs
-    other-modules: []
-    dependencies: freetype-gl-mini
-  scaling:
-    ghc-options: -threaded -rtsopts
-    source-dirs: 
-      - test
-    main: TestScaling.hs
-    other-modules: []
-    dependencies: freetype-gl-mini
-  buffer:
-    ghc-options: -threaded -rtsopts
-    source-dirs: 
-      - test
-    main: TestBuffer.hs
-    other-modules: []
-    dependencies: freetype-gl-mini
-  buffer-scroll:
-    ghc-options: -threaded -rtsopts
-    source-dirs: 
-      - test
-    main: TestBufferScroll.hs
-    other-modules: []
-    dependencies: freetype-gl-mini

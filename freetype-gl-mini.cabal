@@ -44,10 +44,7 @@ library
     , glfw-pal
     , containers
     , mtl
-    , random
     , lens-extra
-    , halive
-    , linear-extra
   if os(windows)
     include-dirs:
         C:\msys64\mingw64\include
@@ -63,103 +60,4 @@ library
       Graphics.GL.Freetype.API
       Graphics.GL.Freetype.Font
       Graphics.GL.Freetype.Types
-      Graphics.GL.TextBuffer
-      Graphics.GL.TextBuffer.Input
-      Graphics.GL.TextBuffer.Metrics
-      Graphics.GL.TextBuffer.Mouse
-      Graphics.GL.TextBuffer.Render
-      Graphics.GL.TextBuffer.TextBuffer
-      Graphics.GL.TextBuffer.Types
-  default-language: Haskell2010
-
-test-suite basic
-  type: exitcode-stdio-1.0
-  main-is: TestBasic.hs
-  hs-source-dirs:
-      test
-  ghc-options: -Wall -O2 -threaded -rtsopts
-  ghc-prof-options: -Wall -O2 -fprof-auto
-  build-depends:
-      base
-    , stm
-    , gl
-    , linear
-    , gl-pal
-    , glfw-pal
-    , containers
-    , mtl
-    , random
-    , lens-extra
-    , halive
-    , linear-extra
-    , freetype-gl-mini
-  default-language: Haskell2010
-
-test-suite buffer
-  type: exitcode-stdio-1.0
-  main-is: TestBuffer.hs
-  hs-source-dirs:
-      test
-  ghc-options: -Wall -O2 -threaded -rtsopts
-  ghc-prof-options: -Wall -O2 -fprof-auto
-  build-depends:
-      base
-    , stm
-    , gl
-    , linear
-    , gl-pal
-    , glfw-pal
-    , containers
-    , mtl
-    , random
-    , lens-extra
-    , halive
-    , linear-extra
-    , freetype-gl-mini
-  default-language: Haskell2010
-
-test-suite buffer-scroll
-  type: exitcode-stdio-1.0
-  main-is: TestBufferScroll.hs
-  hs-source-dirs:
-      test
-  ghc-options: -Wall -O2 -threaded -rtsopts
-  ghc-prof-options: -Wall -O2 -fprof-auto
-  build-depends:
-      base
-    , stm
-    , gl
-    , linear
-    , gl-pal
-    , glfw-pal
-    , containers
-    , mtl
-    , random
-    , lens-extra
-    , halive
-    , linear-extra
-    , freetype-gl-mini
-  default-language: Haskell2010
-
-test-suite scaling
-  type: exitcode-stdio-1.0
-  main-is: TestScaling.hs
-  hs-source-dirs:
-      test
-  ghc-options: -Wall -O2 -threaded -rtsopts
-  ghc-prof-options: -Wall -O2 -fprof-auto
-  build-depends:
-      base
-    , stm
-    , gl
-    , linear
-    , gl-pal
-    , glfw-pal
-    , containers
-    , mtl
-    , random
-    , lens-extra
-    , halive
-    , linear-extra
-    , freetype-gl-mini
   default-language: Haskell2010
