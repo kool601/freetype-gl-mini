@@ -35,6 +35,9 @@ library
       freetype-gl/texture-atlas.c
       freetype-gl/vector.c
       freetype-gl/platform.c
+  -- Allows freetype-gl to use strdup rather than _strdup
+  -- (from freetype-gl's CMakeLists.txt)
+  cc-options: -D_CRT_NONSTDC_NO_DEPRECATE
   build-depends:
       base
     , stm
