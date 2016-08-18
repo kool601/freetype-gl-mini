@@ -43,7 +43,6 @@ library
     , gl
     , linear
     , gl-pal
-    , glfw-pal
     , containers
     , mtl
     , lens-extra
