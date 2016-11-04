@@ -35,8 +35,7 @@ library
       freetype-gl/texture-atlas.c
       freetype-gl/vector.c
       freetype-gl/platform.c
-  -- Allows freetype-gl to use strdup rather than _strdup
-  cc-options: -D strdup=_strdup
+
   build-depends:
       base
     , stm
@@ -53,6 +52,8 @@ library
         c:\msys64\mingw64\bin
     extra-libraries:
         freetype-6
+    -- Allows freetype-gl to use strdup rather than _strdup
+    cc-options: -D strdup=_strdup
   else
     extra-libraries:
         freetype
