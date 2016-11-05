@@ -55,8 +55,8 @@ library
     -- Allows freetype-gl to use strdup rather than _strdup
     cc-options: -D strdup=_strdup
   else
-    extra-libraries:
-        freetype
+    extra-lib-dirs: /usr/local/lib
+    extra-libraries: freetype
   exposed-modules:
       Graphics.GL.Freetype
       Graphics.GL.Freetype.API
